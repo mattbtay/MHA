@@ -386,7 +386,53 @@ h1.sectionTitle {
 	font-style:italic;
 	font-size:40px;
 	font-family: 'Tangerine', cursive;
+	padding:0;
+	margin:0 0 0 10px;
 }
+
+/* ===== Left Content ===== */
+
+section#leftContent {}
+
+	#leftContent section {
+		padding:20px 10px 10px 10px;
+	}
+
+	#leftContent section article h1 {
+		color:#fdb724;
+		font-size:26px;
+		padding-top:0;
+		margin:0;
+		display:inline;
+	}
+	
+		#leftContent section article h2 {
+			font-size:18px;
+			display:inline;
+			font-size:10px;
+			color:rgba(0,0,0,.5);
+			font-style:italic;
+			padding-left:10px;
+		}
+		
+			#leftContent section article {
+				padding:15px 0 10px 0;
+				border-bottom:solid 3px rgba(0,0,0,.2);
+			}
+			
+				#leftContent section article:last-of-type {
+					border-bottom:none;
+				}
+			
+				#leftContent section article div {
+					font-size:16px;
+					line-height:24px;
+					padding:0 10px;
+				}
+
+					#leftContent section article div p {
+						color:rgba(0,0,0,.7);
+					}
 
 /* ===== weekly calendar ===== */
 
@@ -449,6 +495,7 @@ h1.sectionTitle {
 				display:table-cell;
 				vertical-align:middle;
 				padding:1px 2px;
+				line-height:20px;
 				
 				
 			}
@@ -573,11 +620,11 @@ html, body {height: 100%;}
 #main {min-height: 100%;}
 
 #pageWrap {overflow:auto;
-	padding-bottom: 375px;}  /* must be same height as the footer */
+	padding-bottom: 300px;}  /* must be same height as the footer */
 
 #footer {position: relative;
-	margin-top: -375px; /* negative value of footer height */
-	height: 385px;
+	margin-top: 300px; /* negative value of footer height */
+	height: 300px;
 	clear:both;
 	background:#fee7b6;} 
 
@@ -610,15 +657,13 @@ body:before {
 		margin:0 auto;
 		width:71px;
 		height:70px;
-		position:relative;
-		top:-50px;
+		margin-top:-50px;
 		z-index:20;
 		background:url('../images/footLogo.png') center top no-repeat;
 	}
 	
 	#footer #footContent {
-		position:relative;
-			top:-45px;
+			
 	}
 	
 	#footer ul {
@@ -659,11 +704,11 @@ body:before {
 
 div#copyright p {
 	text-align:center;
-	padding-top:25px;
-	line-height:25px;
+	margin:0;
+	padding:20px 0 0 0;
 	opacity:.5;
 }
-	#copyright p a {
+	#copyright p a, #footer p a {
 		color:#000;
 	
 }
